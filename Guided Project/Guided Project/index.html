@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/Book.js"></script>
+    <script src="JS/BookOperations.js"></script>
+    <script src="JS/Controller.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <title>Book Story Inventory System</title>
+</head>
+<body>
+    <div class="btn btn-success">
+        <h4  class="">Book Store Invertory System</h4>
+    </div>
+    <div class="mb-3">
+        <lable class="form-label">Book No.</lable>
+        <input class="form-control" type="text" id="bno">
+    </div>
+    <div class="mb-3">
+        <lable class="form-label">Book Title</lable>
+        <input class="form-control" type="text" id="btitle">
+    </div>
+    <div>
+        <lable class="form-label">Author</lable>
+        <input class="form-control" type="text" id="bauthor">
+    </div>
+    <div>
+        <lable class="form-label">Book Price</lable>
+        <input type="range" class="form-range" id="bprice" min=0 max=10000>
+    </div>
+    <div>
+        <lable class="form-label">Book Category</lable>
+        <select class="form-select" aria-label="Default select example" id="bcat">
+            <option selected>Open this select menu</option>
+            <option value="1">Engg.</option>
+            <option value="2">Arts</option>
+            <option value="3">Literature</option>
+            <option value="4">Science</option>
+        </select>
+    </div>
+    <div>
+        <lable class="form-label">Book Quantity</lable>
+        <input class="form-control" type="number" name="" id="bqty">
+    </div>
+    <div>
+        <lable class="form-label">Book Description</lable>
+        <textarea class="form-control" name="" id="bdesc" cols="15" rows="5" id="bdesc"></textarea>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger" onclick="addRecord()">Add</button>
+        <!-- <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-success">Right</button> -->
+    </div>
+</body>
+</html>

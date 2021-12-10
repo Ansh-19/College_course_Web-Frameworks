@@ -1,0 +1,15 @@
+Book store inventry system
+book info to store:
+bno     text
+btitle  text
+bauthor text
+bprice  number
+bcat    arts/ engg/ lite/ sci/
+bqty    interger
+bdesc   text
+
+
+MODEL
+=====
+class definition
+Create a main object... to store all the books
