@@ -1,0 +1,6 @@
+admin
+User
+choosing of slots
+delivery spots 
+type of vehicle 
+cost of parking
