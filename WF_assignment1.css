@@ -1,0 +1,51 @@
+*
+{
+    margin:1px;
+    padding:1px;
+}
+img {
+    max-width:20%;
+    height:50px;
+}
+body{
+    background-color: lightyellow;
+    font-family: sans-serif;
+}
+.top-nav-bar
+{
+    height:0px;
+    top:0px;
+    position: sticky;
+    background: white;
+    margin-bottom:20px solid;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+
+}
+.logo{
+    height:40px;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-top:9px;
+    margin-left: 30px;
+    border: 1px solid orange;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+}
+.input-group-text{
+    background: orange;
+    border: 1px solid orange;
+    margin: 8.5px 10px 3px 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor:pointer;
+}
+.fa-search{
+    color: white;
+}

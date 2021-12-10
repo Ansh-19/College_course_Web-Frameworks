@@ -1,0 +1,20 @@
+.card{
+    width: 30%;
+    border: 2px solid blue;
+    margin: 2px;
+}
+img{
+    width: 100%;
+}
+.cardpane{
+    display: flex;
+    justify-content: space-around;
+}
+@media(max-width:700px){
+    .cardpane{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+}
