@@ -1,0 +1,43 @@
+h2{
+    color:aqua;
+    border:3px blue dotted;
+}
+.bgcol{
+    background-color: lightgreen;
+    position: relative;
+}
+#talign{
+    text-align: center;
+    background-color: lightyellow;
+    background-image: url(""../SCREENSHOTS/he.jpeg"");
+}
+body{
+    /*h*/
+}
+.h2margin{
+    /*margin: 100px 200px 400px 450px;*/
+    /*top right bottom left*/
+    margin: 100px;
+    padding:100px 50px;
+}
+.para1{
+    background-color: lime;
+    position: fixed;
+}
+.para2{
+    background-color: lightgray;
+    position: absolute;
+}
+.para3{
+    background-color: lightyellow;
+    position: relative;
+}
+.para4{
+    width: 100px;
+    height:100px;
+    overflow: visible;
+    border: 4px red solid;
+    overflow: auto;
+    display: inline-block;
+    display: block;
+}
