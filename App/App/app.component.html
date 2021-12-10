@@ -1,0 +1,52 @@
+<button class="btn btn-primary" (click)="justCheck()">Submit</button>
+<label for="">The value of i is: {{i}}</label>
+<label for="">The title is {{title}}</label>
+<img src="{{imgUrl}}" alt="Ball Pic">
+<img [src]="imgUrl1" alt="Google Pic">
+<img [src]="imgUrl2" alt="Online Pic">
+<br>
+<div (click)="divClick()"><button class="btn btn-success" (click) = "checkwithEvenObject($event)">Click</button>
+</div>
+<label for="">{{msg}}</label>
+<br>
+<label for="">Name:</label>
+<input type="text" placeholder="Enter Name" [(ngModel)] = "FullName">
+<br>
+<label for="">Branch:</label>
+<input type="text" placeholder="Enter Branch" [(ngModel)]="Branch">
+<br>
+<button (click) = "twoWay(FullName, Branch)">OK</button>
+Full Name:<span>{{fn}} </span>
+Branch:<span>{{br}} </span>
+<br>
+<table class="table table-striped" *ngIf="b.length">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Edition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let book of b">
+      <td>{{book.title}}</td>
+      <td>{{book.price}}</td>
+      <td>{{book.pub}}</td>
+      <td>{{book.ed}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Total Quantity</th>
+      <th scope="col">{{b.length}}</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </tbody>
+</table>
+<button (click)="increaseSize()" [ngClass]='applyClasses()'>Increase</button>
+<div [ngStyle] = "myStyle()">India</div>
+<label for="" [ngStyle] = "myStyle1()">India</label>
+<button (click)="AddRemoveClass()" [ngClass]='applyClasses()'>Apply Classes</button>
+<div>
+  <label for="" appChangeText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi est sequi voluptatibus recusandae dignissimos nemo, dolorem, iure adipisci nisi voluptatem veniam eum nobis. Minus molestias doloribus porro a quaerat?</label>
+</div>
